@@ -17,24 +17,43 @@
 <body>
     <header>
         <div class="date">
-            <div id="day">16</div>
+            <div id="day">17</div>
             <div style="display: flex; flex-direction: column; justify-content: center;">
                 <div id="month">DEC</div>
                 <div id="year">2024</div>
             </div>
         </div>
         <div style="display: flex; flex-direction: column; justify-content: flex-end;">
-            <div id="week">MONDAY</div>
+            <div id="week">TUESDAY</div>
         </div>
         
     </header>
     <main>
         <div class="todo_list">
+            <!-- 예시 아이템1: 완료되지 않고 즐겨찾기 되지 않은 상태 -->
             <div class="item">
                 <input type="checkbox" class="chkbox">
                 <input type="text" class="txtbox">
                 <div class="action">
                     <button class="btnbox btn_favorites">star</button>
+                    <button class="btnbox btn_remove">remove</button>
+                </div>
+            </div>
+            <!-- 예시 아이템2: 완료되었고 즐겨찾기 되지 않은 상태 -->
+            <div class="item">
+                <input type="checkbox" class="chkbox" checked>
+                <input type="text" class="txtbox finished">
+                <div class="action">
+                    <button class="btnbox btn_favorites">star</button>
+                    <button class="btnbox btn_remove">remove</button>
+                </div>
+            </div>
+            <!-- 예시 아이템3: 완료되지 않고 즐겨찾기된 상태 -->
+            <div class="item">
+                <input type="checkbox" class="chkbox">
+                <input type="text" class="txtbox">
+                <div class="action">
+                    <button class="btnbox btn_favorites marked">star</button>
                     <button class="btnbox btn_remove">remove</button>
                 </div>
             </div>
