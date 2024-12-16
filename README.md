@@ -1,1 +1,1 @@
-# gandi_todoapp
+# jandi_todoapp
