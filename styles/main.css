@@ -1,0 +1,60 @@
+body{
+    /*layout*/
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    /* design*/
+    background-color: rgba(65, 185, 73, 0.2);
+    font-family: "ABeeZee", sans-serif;
+}
+
+header{
+    /*layout*/
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.date{
+    /*layout*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#day{
+    /*layout*/
+    display: flex;
+    margin: 5px;
+
+    /*design*/
+    font-size: 3rem;
+}
+
+#month{
+    /*layout*/
+    display: flex;
+
+    /*design*/
+    font-size: 1.5rem;
+}
+
+#year{
+    /*layout*/
+    display: flex;
+
+    /*design*/
+    font-size: 1rem;
+}
+
+#week{
+    /*layout*/
+    display: flex;
+    margin-bottom: 20px;
+
+    /*design*/
+    font-size: 1.5rem;
+}
