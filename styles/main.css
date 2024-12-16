@@ -97,7 +97,8 @@ main{
 .item{
     /*layout*/
     display: flex;
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 10px;
     justify-content: space-around;
 }
@@ -151,3 +152,20 @@ main{
     background-image: url(../icon/x_circle.png);
 }
 
+
+/**********************************************************/
+/*                                                        */
+/*                       animation                        */
+/*                                                        */
+/**********************************************************/
+.txtbox.finished{
+    color: #B3B3B3;
+}
+
+.btn_favorites.marked{
+    background-image: url(../icon/star_on.png);
+}
+.chkbox:checked{
+    background-repeat: no-repeat;
+    background-image: url(../icon/check_on.png);
+}
