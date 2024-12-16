@@ -1,3 +1,8 @@
+/**********************************************************/
+/*                                                        */
+/*                         header                         */
+/*                                                        */
+/**********************************************************/
 body{
     /*layout*/
     display: flex;
@@ -9,6 +14,11 @@ body{
     font-family: "ABeeZee", sans-serif;
 }
 
+/**********************************************************/
+/*                                                        */
+/*                         header                         */
+/*                                                        */
+/**********************************************************/
 header{
     /*layout*/
     display: flex;
@@ -58,3 +68,86 @@ header{
     /*design*/
     font-size: 1.5rem;
 }
+
+
+/**********************************************************/
+/*                                                        */
+/*                          main                          */
+/*                                                        */
+/**********************************************************/
+main{
+    /*layout*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.todo_list{
+    /*layout*/
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    /*design*/
+    background-color: #fff;
+}
+
+.item{
+    /*layout*/
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.chkbox{
+    /*layout*/
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+
+    /*design*/
+    appearance: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../icon/check_off.png);
+}
+
+.txtbox{
+    /*layout*/
+    flex-grow: 10;
+    margin: 5px;
+
+    /*design*/
+    border: none;
+}
+
+.btnbox{
+    /*layout*/
+    padding: 5px;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+
+    /*design*/
+    color: transparent;
+    border: none;
+    background-color: transparent;
+    background-size: cover;
+}
+
+.btn_favorites{
+    /*design*/
+    background-repeat: no-repeat;
+    background-image: url(../icon/star_off.png);
+}
+
+.btn_remove{
+    /*design*/
+    background-repeat: no-repeat;
+    background-image: url(../icon/x_circle.png);
+}
+
