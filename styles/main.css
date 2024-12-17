@@ -1,6 +1,47 @@
 /**********************************************************/
 /*                                                        */
-/*                         header                         */
+/*                       media query                      */
+/*                                                        */
+/**********************************************************/
+@media (min-width: 601px) {
+    html{
+        font-size: 16px;
+    }
+    header{
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    main{
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    .txtbox{
+        flex-grow: 10;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    html{
+        font-size: 10px;
+    }
+    header{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    main{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .txtbox{
+        flex-grow: 6;
+    }
+}
+  
+
+/**********************************************************/
+/*                                                        */
+/*                          body                          */
 /*                                                        */
 /**********************************************************/
 body{
@@ -21,8 +62,6 @@ header{
     /*layout*/
     display: flex;
     justify-content: space-between;
-    margin-right: 20%;
-    margin-left: 20%;
 }
 
 .date{
@@ -71,8 +110,6 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 20%;
-    margin-left: 20%;
 }
 
 .todo_list{
@@ -113,8 +150,8 @@ main{
 
 .txtbox{
     /*layout*/
-    flex-grow: 10;
     margin: 5px;
+    width: 10px;
 
     /*design*/
     border: none;
@@ -160,7 +197,7 @@ footer{
     /*layout*/
     position: absolute;
     margin-top: -20px;
-    width: 250px;
+    width: 35%;
     height: 40px;
 
     /*design*/
