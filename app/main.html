@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>잔디 Todo</title>
 
     <!--link-->
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script src="../scripts/main.js" defer></script>
-</head>
-<body>
+    <script src="../scripts/dom.js" defer></script>
+  </head>
+  <body>
     <header>
-        <div class="date">
-            <div id="day"></div>
-            <div style="display: flex; flex-direction: column; justify-content: center;">
-                <div id="month"></div>
-                <div id="year"></div>
-            </div>
+      <div class="date">
+        <div id="day"></div>
+        <div
+          style="display: flex; flex-direction: column; justify-content: center"
+        >
+          <div id="month"></div>
+          <div id="year"></div>
         </div>
-        <div style="display: flex; flex-direction: column; justify-content: flex-end;">
-            <div id="week"></div>
-        </div>
+      </div>
+      <div
+        style="display: flex; flex-direction: column; justify-content: flex-end"
+      >
+        <div id="week"></div>
+      </div>
     </header>
     <main>
-        <div class="todo_list">
-            <!-- 할일 항목이 JavaScript에 의해 동적으로 추가됨 -->
-        </div>
+      <div class="todo_list">
+        <!-- 할일 항목이 JavaScript에 의해 동적으로 추가됨 -->
+      </div>
     </main>
     <footer>
-        <button class="btn_create">+ NEW TASK</button>
+      <button class="btn_create">+ NEW TASK</button>
     </footer>
-</body>
+  </body>
 </html>
