@@ -13,50 +13,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="../scripts/main.js" defer></script>
 </head>
 <body>
     <header>
         <div class="date">
-            <div id="day">17</div>
+            <div id="day"></div>
             <div style="display: flex; flex-direction: column; justify-content: center;">
-                <div id="month">DEC</div>
-                <div id="year">2024</div>
+                <div id="month"></div>
+                <div id="year"></div>
             </div>
         </div>
         <div style="display: flex; flex-direction: column; justify-content: flex-end;">
-            <div id="week">TUESDAY</div>
+            <div id="week"></div>
         </div>
-        
     </header>
     <main>
         <div class="todo_list">
-            <!-- 예시 아이템1: 완료되지 않고 즐겨찾기 되지 않은 상태 -->
-            <div class="item">
-                <input type="checkbox" class="chkbox">
-                <input type="text" class="txtbox">
-                <div class="action">
-                    <button class="btnbox btn_favorites">star</button>
-                    <button class="btnbox btn_remove">remove</button>
-                </div>
-            </div>
-            <!-- 예시 아이템2: 완료되었고 즐겨찾기 되지 않은 상태 -->
-            <div class="item">
-                <input type="checkbox" class="chkbox" checked>
-                <input type="text" class="txtbox finished">
-                <div class="action">
-                    <button class="btnbox btn_favorites">star</button>
-                    <button class="btnbox btn_remove">remove</button>
-                </div>
-            </div>
-            <!-- 예시 아이템3: 완료되지 않고 즐겨찾기된 상태 -->
-            <div class="item">
-                <input type="checkbox" class="chkbox">
-                <input type="text" class="txtbox">
-                <div class="action">
-                    <button class="btnbox btn_favorites marked">star</button>
-                    <button class="btnbox btn_remove">remove</button>
-                </div>
-            </div>
+            <!-- 할일 항목이 JavaScript에 의해 동적으로 추가됨 -->
         </div>
     </main>
     <footer>
