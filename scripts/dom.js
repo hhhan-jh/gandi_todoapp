@@ -2,8 +2,10 @@ class ListController {
   container;
   items = [];
   dragStartIndex;
+  filter;
 
   constructor() {
+    this.filter = "ALL";
     this.container = document.getElementsByClassName("todo_list")[0];
     this.setupDrag();
   }
@@ -18,13 +20,11 @@ class ListController {
     };
 
     this.container.addEventListener("dragstart", (e) => {
-      console.log("item", findParent(e.target).index);
       const currentItem = this.items.find(
         (item) => item.index === findParent(e.target).index
       );
 
       this.dragStartIndex = currentItem;
-      console.log("currentItem", currentItem);
     });
 
     this.container.addEventListener("dragover", (e) => {
@@ -52,9 +52,17 @@ class ListController {
 
   // 리스트 재렌더링
   reRender() {
-    this.removeAll();
+    let renderItem;
+    if (this.filter === "ALL") {
+      renderItem = this.items;
+    } else if (this.filter === "PINNED") {
+      renderItem = this.items.filter((item) => item.isPinned);
+    } else if (this.filter === "DONE") {
+      renderItem = this.items.filter((item) => item.isDone);
+    }
 
-    this.items
+    this.removeAll();
+    renderItem
       .sort((a, b) => {
         if (a.isPinned && !b.isPinned) return -1;
         if (!a.isPinned && b.isPinned) return 1;

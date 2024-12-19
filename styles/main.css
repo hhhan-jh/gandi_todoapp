@@ -109,19 +109,18 @@ main{
     /*layout*/
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
 }
 
 .todo_list{
     /*layout*/
-    padding: 0px 20px;
     height: 400px;
 
     /*design*/
     border-top: 30px solid rgba(0,0,0,0); /*스크롤과 관계없이 상단 여백 유지*/
     border-bottom: 40px solid rgba(0,0,0,0); /*스크롤과 관계없이 하단 여백 유지*/
     border-right: 20px solid rgba(0,0,0,0); /*스크롤바 안쪽으로 넣기 위한 여백 만들기*/
-    background-color: #fff;
     overflow-y: auto;
 }
 
@@ -155,6 +154,19 @@ main{
 
     /*design*/
     border: none;
+}
+
+.filter_btns button{
+    /*layout*/
+    padding:4px 8px;
+
+    /*design*/
+    border: none;
+    background-color: #27A800;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    cursor: pointer;
 }
 
 .btnbox{
@@ -208,6 +220,7 @@ footer{
     font-size: 1.3rem;
     font-weight: bold;
     color: #fff;
+    cursor: pointer;
 }
 
 /**********************************************************/
