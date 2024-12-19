@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   filterCompletedButton.addEventListener("click", (e) => {
-    listController.filter = "DONE";
+    listController.filter = "TODO";
     listController.reRender();
   });
 });

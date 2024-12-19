@@ -57,8 +57,8 @@ class ListController {
       renderItem = this.items;
     } else if (this.filter === "PINNED") {
       renderItem = this.items.filter((item) => item.isPinned);
-    } else if (this.filter === "DONE") {
-      renderItem = this.items.filter((item) => item.isDone);
+    } else if (this.filter === "TODO") {
+      renderItem = this.items.filter((item) => !item.isDone);
     }
 
     this.removeAll();
